@@ -1,7 +1,6 @@
 package com.lmFreire.cursomc.domain;
 
 import com.lmFreire.cursomc.domain.enums.EstadoPagamento;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
