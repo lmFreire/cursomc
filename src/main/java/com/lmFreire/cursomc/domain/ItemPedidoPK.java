@@ -1,6 +1,5 @@
 package com.lmFreire.cursomc.domain;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
