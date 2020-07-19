@@ -1,6 +1,7 @@
 package com.lmFreire.cursomc.service;
 
 import com.lmFreire.cursomc.domain.Categoria;
+import com.lmFreire.cursomc.dto.CategoriaDTO;
 import com.lmFreire.cursomc.repository.CategoriaRepository;
 import com.lmFreire.cursomc.service.exception.DataIntegrityException;
 import com.lmFreire.cursomc.service.exception.ObjectNotFoundException;
@@ -53,6 +54,10 @@ public class CategoriaService {
         PageRequest pageRequest = PageRequest.of(page, linesPerPage, Sort.Direction.valueOf(direction),
                 orderBy);
         return repo.findAll(pageRequest);
+    }
+
+    public Categoria fromDTO(CategoriaDTO objDto){
+        return new Categoria(objDto.getId(), objDto.getNome());
     }
 
 }
